@@ -1,0 +1,3 @@
+[submodule "autogen_v0_5/autogen/multipol"]
+	path = autogen_v0_5/autogen/multipol
+	url = https://github.com/LundUniversityComputerVision/multipol
