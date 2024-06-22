@@ -4,12 +4,22 @@
 This repository hosts three CPU-based solvers, namely, _(i)_ elimination template, _(ii)_ Julia, and _(iii)_CPU-HC which is my own implementation, for minimal problems in various computer vision tasks, with documentations on how they can used effectively. <br />
 
 ## Elimination Template
-All the code, under ``autogen_v0_5`` is borrowed from an old (but now probably vanished) repository from Prof. Viktor Larsson. (Will update soon)
+All the code, under ``autogen_v0_5`` is borrowed from an old (but now probably vanished) repository from Prof. Viktor Larsson. You can run minimal problems that were already contained in the code, or add your own minimal problem with ease effort. Refer to (How to build your Elimination Template solver)[(https://github.com/C-H-Chien/Minimal-Problem-Solver-on-CPU/blob/main/EliminationTemplate.md)] for more information. 
 
 ## Julia
-(Will update soon)
+Example Julia code are under ``Julia-HC-Solver/``, where you can provide an explicit polynomial system as illustrated in ``4view_triangulation.jl``, or you can build the problem in Julia as illustrated in ``trifocal_2op1p_30x30.jl``. In either case, a start system (start parameters + start solutions) can be created by Julia's monodromy solver, or it could be explicitly provided by the user. <br />
 
-## My Implementation
+To run Julia's homotopy continuation solver using multi-core CPUs, say 8-cores CPUs, start the Julia by
+```bash
+JULIA_NUM_THREADS=8 ./julia
+```
+and you can check the number of cores used in Julia by
+```julia
+Threads.nthreads()
+```
+which shall return 8. 
+
+## My CPU-HC Implementation
 (Will update soon)
 
 
